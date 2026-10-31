@@ -15,7 +15,7 @@ This repo is a personal systems-thinking course run with the `/teach` skill. Bef
 | `reference/*.html`    | Printable cheat sheets distilled from lessons                              |
 | `assets/`             | Shared components: `course.css`, `quiz.js`, `prediction.js`                |
 
-Every lesson and reference page links `assets/course.css`. Reuse the existing components before writing new ones, and put anything a second lesson could use in `assets/`.
+The site is published with GitHub Pages from `main` (root), with `.nojekyll`. When you add a lesson or reference sheet, add it to [index.html](index.html). Every lesson and reference page links `assets/course.css`. Reuse the existing components before writing new ones, and put anything a second lesson could use in `assets/`.
 
 ## Keep files tidy
 
