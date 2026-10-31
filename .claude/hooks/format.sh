@@ -7,7 +7,7 @@ file="$(jq -r '.tool_response.filePath // .tool_input.file_path // empty')"
 
 # Only touch files inside this project that the tools handle.
 [[ -n "$file" && "$file" == "$root"/* && -f "$file" ]] || exit 0
-[[ "$file" =~ \.(md|json|ya?ml|html)$ ]] || exit 0
+[[ "$file" =~ \.(md|json|ya?ml|html|css|js)$ ]] || exit 0
 [[ -x "$root/node_modules/.bin/prettier" ]] || exit 0
 
 cd "$root"

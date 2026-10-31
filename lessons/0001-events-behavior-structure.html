@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Events, Behavior, Structure</title>
+    <link rel="stylesheet" href="../assets/course.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="crumbs">
+        Module 1 · Foundations · Lesson 0001 ·
+        <a href="../reference/levels-and-linear-thinking.html"
+          >Reference sheet</a
+        >
+      </nav>
+
+      <p class="kicker">Lesson 0001</p>
+      <h1>Events, Behavior, Structure</h1>
+      <p class="subtitle">
+        Why the same incident keeps coming back no matter who is on shift.
+      </p>
+
+      <p>
+        <strong>Today's win:</strong> classify any claim about a system as an
+        <em>event</em>, a <em>behavior over time</em>, or a <em>structure</em>,
+        and spot when a fix only touches the top level.
+      </p>
+
+      <h2>The central claim</h2>
+
+      <blockquote>
+        The system, to a large extent, causes its own behavior.
+        <cite
+          >Donella Meadows,
+          <a href="https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer"
+            ><em>Thinking in Systems</em></a
+          >
+          (2008)</cite
+        >
+      </blockquote>
+
+      <p>
+        This is a testable claim. Put the same people, competence and intentions
+        into a different structure and you get different behavior. Keep the
+        structure, swap the people, and the behavior mostly comes back.
+      </p>
+      <p>
+        You saw this on the hangar floor. A repeat defect on one fleet type
+        survived every shift and every technician. Something in the setup kept
+        producing it: the task card, parts supply, inspection interval, or the
+        pressure to release on time. Retraining or reprimanding the individual
+        changed nothing, because the individual wasn't the cause. Senge's last
+        law says the same thing: <em>"there is no blame."</em>
+        <a
+          class="cite"
+          href="https://leeds-faculty.colorado.edu/larsenk/learnorg/senge.html"
+          >[Senge]</a
+        >
+      </p>
+
+      <h2>Three levels of seeing</h2>
+
+      <p>
+        In chapter 4, "Why Systems Surprise Us," Meadows separates what we
+        observe into three levels. Structure is the source of behavior, and
+        behavior shows itself as a series of events over time.
+        <a
+          class="cite"
+          href="https://study-notes-dge.pages.dev/systems-thinking/thinking-in-systems/chapters/ch04-why-systems-surprise"
+          >[ch. 4 notes]</a
+        >
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Example</th>
+            <th>What it lets you do</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Event</strong></td>
+            <td>"Payment gateway timed out at 14:02."</td>
+            <td>React. Fix 14:02; learn nothing about 15:30.</td>
+          </tr>
+          <tr>
+            <td><strong>Behavior over time</strong></td>
+            <td>"Timeouts have climbed every month-end for six months."</td>
+            <td>Anticipate. Staff up at month-end. Still only adapting.</td>
+          </tr>
+          <tr>
+            <td><strong>Structure</strong></td>
+            <td>
+              "Batch settlement and online traffic share one connection pool;
+              month-end volume fills it; clients retry on timeout."
+            </td>
+            <td>Change what the system produces.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        A behavior is a <em>graph</em>, not a point: you need at least a few
+        events over time to see one. A structure is made of stocks, flows and
+        feedback loops, plus the rules and information that drive them. Most
+        incident reviews stop at the event level, which is why their
+        explanations sound convincing and their fixes don't last.
+      </p>
+
+      <div class="note">
+        <strong>Where the sources differ</strong>
+        The Iceberg model you'll meet in Module 2 adds a fourth level,
+        <em>mental models</em>, under structure. It isn't Meadows'. Its origin
+        is contested: Innovation Associates, Daniel Kim and Senge are all
+        credited.
+        <a
+          class="cite"
+          href="https://embeddingproject.org/resources/introduction-to-systems-thinking/"
+          >[Kim]</a
+        >
+      </div>
+
+      <h2>Linear thinking vs feedback thinking</h2>
+
+      <pre>problem → cause → fix → solved</pre>
+
+      <p>Linear thinking quietly assumes four things:</p>
+      <ol>
+        <li>There is <strong>one cause</strong>.</li>
+        <li>
+          The effect is <strong>close to the cause</strong> in time and space.
+        </li>
+        <li>
+          The fix <strong>doesn't change the system</strong> that made the
+          problem.
+        </li>
+        <li>The other actors <strong>won't react</strong>.</li>
+      </ol>
+
+      <p>
+        Feedback thinking drops all four. Your fix becomes an input, the system
+        responds, and the response changes the problem:
+      </p>
+
+      <pre>
+problem → decision → action → system responds → problem (changed)
+   ↑                                                   │
+   └───────────────────────────────────────────────────┘</pre>
+
+      <p>
+        Sterman calls the result <strong>policy resistance</strong>: policies
+        that fail, or worsen the problem they were meant to solve, because of
+        how the system responds.
+        <a
+          class="cite"
+          href="https://faculty.sites.iastate.edu/tesfatsi/archive/tesfatsi/SystemDynamics.JohnSterman2001.pdf"
+          >[Sterman 2001]</a
+        >
+        He also argues that "side effects" are just the effects we didn't model:
+        <em>"there are no side effects—just effects."</em>
+        <a
+          class="cite"
+          href="https://www.mit.edu/~jsterman/Learning_from_Evidence.html"
+          >[Sterman 2006]</a
+        >
+      </p>
+
+      <p>
+        Senge makes the same points as aphorisms. Three of his eleven laws you
+        will use constantly:
+        <a
+          class="cite"
+          href="https://leeds-faculty.colorado.edu/larsenk/learnorg/senge.html"
+          >[Senge]</a
+        >
+      </p>
+      <ul>
+        <li>
+          <strong>1.</strong> Today's problems come from yesterday's
+          "solutions."
+        </li>
+        <li>
+          <strong>2.</strong> The harder you push, the harder the system pushes
+          back.
+        </li>
+        <li>
+          <strong>7.</strong> Cause and effect are not closely related in time
+          and space.
+        </li>
+      </ul>
+
+      <div class="note">
+        <strong>Where the sources differ</strong>
+        Senge offers heuristics meant to change how managers think. Sterman
+        insists the structure must be mapped, and ideally simulated, because
+        intuition about dynamics is reliably wrong even among the highly
+        educated. His evidence is the
+        <a href="https://mitmgmtfaculty.mit.edu/jsterman/bathtubdynamics/"
+          >bathtub-dynamics studies</a
+        >, which we'll use in Module 3. Meadows sits between them. In this
+        course, "check your prediction" means Sterman's standard.
+      </div>
+
+      <h2>Check yourself</h2>
+      <p>Classify each statement. You get feedback immediately.</p>
+
+      <div
+        class="quiz"
+        id="levels-quiz"
+        data-options="Event|Behavior|Structure"
+      >
+        <div class="quiz-item" data-answer="Behavior">
+          <p>
+            "Reconciliation exceptions have climbed at every month-end for six
+            months."
+          </p>
+          <div class="why">
+            Several events read as a trend over time. It tells you
+            <em>what</em> keeps happening, not <em>why</em>.
+          </div>
+        </div>
+        <div class="quiz-item" data-answer="Structure">
+          <p>
+            "Online payments and the nightly settlement batch share one database
+            connection pool, and clients retry on timeout."
+          </p>
+          <div class="why">
+            It describes connections and a rule (retry on timeout) that
+            <em>generate</em> timeouts. Change these and the behavior changes.
+          </div>
+        </div>
+        <div class="quiz-item" data-answer="Event">
+          <p>"The settlement batch failed at 02:14 last night."</p>
+          <div class="why">
+            One point in time. On its own it supports a reaction, nothing more.
+          </div>
+        </div>
+        <div class="quiz-item" data-answer="Structure">
+          <p>
+            "Technicians are measured on on-time aircraft release; nobody tracks
+            whether the same defect returns."
+          </p>
+          <div class="why">
+            A measurement rule and a missing information flow. These shape what
+            every technician does, whoever is on shift.
+          </div>
+        </div>
+        <div class="quiz-item" data-answer="Event">
+          <p>"Fraud alerts spiked during the 11.11 sale."</p>
+          <div class="why">
+            One occurrence. If it happened every 11.11 and 12.12, the
+            <em>series</em> would be a behavior.
+          </div>
+        </div>
+        <div class="quiz-item" data-answer="Behavior">
+          <p>
+            "The same hydraulic fitting has been written up on three aircraft in
+            the last 60 days."
+          </p>
+          <div class="why">
+            A repeat-defect pattern. Your reliability program already works at
+            this level, and the next step is to ask what produces it.
+          </div>
+        </div>
+      </div>
+      <p class="quiz-score" data-for="levels-quiz"></p>
+
+      <h2>Exercise 1.1: predict first</h2>
+
+      <p>
+        A Thai digital bank's reconciliation team handles
+        <strong>exceptions</strong>: transactions where the bank's ledger and
+        the payment network's settlement file disagree. The open-exception count
+        has risen slowly for a quarter. Audit flags it. The ops head responds:
+      </p>
+      <ul>
+        <li>
+          New KPI: <strong>% of exceptions closed within 24 hours</strong>.
+        </li>
+        <li>Each analyst's weekly scorecard shows their closure count.</li>
+        <li>
+          Overdue exceptions are reviewed daily, with the ops head present.
+        </li>
+      </ul>
+      <p>
+        Nothing else changes: same analysts, same upstream systems, same
+        settlement file format.
+      </p>
+
+      <form
+        class="prediction"
+        data-key="0001-exercise-1-1"
+        data-title="Exercise 1.1 predictions"
+      >
+        <label
+          >1a. Reported open-exception count over the next ~3 months
+          <span class="hint">Sketch in ASCII or describe the shape.</span>
+          <textarea name="q1a"></textarea>
+        </label>
+        <label
+          >1b. Recurring exceptions (same root cause, or reopened) over the same
+          period
+          <span class="hint">Why might this move differently from 1a?</span>
+          <textarea name="q1b"></textarea>
+        </label>
+        <label
+          >2. Which linear-thinking assumption did the ops head make?
+          <span class="hint">Name at least one of the four.</span>
+          <textarea name="q2"></textarea>
+        </label>
+        <label
+          >3. At which level did the ops head intervene?
+          <span class="hint"
+            >Event, behavior or structure, in one sentence.</span
+          >
+          <textarea name="q3"></textarea>
+        </label>
+        <label
+          >4. Stretch: how could analysts hit the KPI without the ledger and
+          settlement file agreeing more often?
+          <textarea name="q4"></textarea>
+        </label>
+      </form>
+
+      <p>
+        There's no answer key on this page. Copy your answers into the chat and
+        the agent will critique them. A wrong prediction you committed to
+        teaches more than a right one you hedged.
+      </p>
+
+      <div class="source">
+        <strong>Primary source</strong>
+        Donella Meadows,
+        <a href="https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer"
+          ><em>Thinking in Systems</em></a
+        >, chapter 4, "Why Systems Surprise Us." For a free, shorter read on
+        policy resistance, see
+        <a
+          href="https://faculty.sites.iastate.edu/tesfatsi/archive/tesfatsi/SystemDynamics.JohnSterman2001.pdf"
+          >Sterman (2001)</a
+        >.
+      </div>
+
+      <div class="ask">
+        <strong>Ask your teacher</strong>
+        Anything unclear, or a case from your own work that doesn't fit the
+        three levels? Ask the agent. That's what it's for.
+      </div>
+
+      <footer>
+        Next: Lesson 0002, The Systems Lens (fixes that backfire and the
+        Iceberg), after Exercise 1.1 is reviewed.
+      </footer>
+    </main>
+    <script src="../assets/quiz.js"></script>
+    <script src="../assets/prediction.js"></script>
+  </body>
+</html>

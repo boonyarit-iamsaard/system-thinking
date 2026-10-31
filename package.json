@@ -5,8 +5,8 @@
   "scripts": {
     "prepare": "git config core.hooksPath .githooks",
     "fix": "pnpm format && pnpm lint:md:fix",
-    "format": "prettier --write \"**/*.{md,json,yaml,yml,html}\"",
-    "format:check": "prettier --check \"**/*.{md,json,yaml,yml,html}\"",
+    "format": "prettier --write \"**/*.{md,json,yaml,yml,html,css,js}\"",
+    "format:check": "prettier --check \"**/*.{md,json,yaml,yml,html,css,js}\"",
     "lint": "pnpm format:check && pnpm lint:md",
     "lint:md": "markdownlint \"**/*.md\" --ignore-path .gitignore",
     "lint:md:fix": "markdownlint --fix \"**/*.md\" --ignore-path .gitignore"
