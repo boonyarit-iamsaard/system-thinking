@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# Block commits that don't pass prettier + markdownlint. Fix with `pnpm fix`.
+pnpm --silent lint || {
+  echo "pre-commit: lint failed. Run \`pnpm fix\`, re-stage, and commit again." >&2
+  exit 1
+}

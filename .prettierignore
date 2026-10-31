@@ -1,0 +1,5 @@
+# Lockfiles — never reformat
+pnpm-lock.yaml
+
+# Dependencies
+node_modules
